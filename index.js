@@ -69,6 +69,7 @@ stop = function () {
 };
 
 reset = function () {
+  started = false;
   log.textContent = "STOPWATCH STATUS";
   clearInterval(stopwatch);
   duration = [0, 0, 0];

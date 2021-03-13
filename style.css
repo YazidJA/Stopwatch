@@ -1,0 +1,28 @@
+section {
+  text-align: center;
+  margin: 2rem auto;
+  width: 90%;
+  border: 1px solid #023d6d;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #023d6d;
+}
+
+button {
+  font: inherit;
+  background: #023d6d;
+  color: white;
+  border: 1px solid #023d6d;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #084f88;
+  border-color: #084f88;
+}

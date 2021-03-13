@@ -6,6 +6,9 @@ const timer = document.getElementById("timer");
 
 let started,
   stopwatch,
+  ms,
+  seconds,
+  minutes,
   duration = [0, 0, 0]; // miliseconds, seconds, minutes
 
 showtimer = function () {
@@ -21,7 +24,28 @@ showtimer = function () {
     duration[2]++; // increments min
   }
 
-  timer.textContent = `${duration[2]} : ${duration[1]} : ${duration[0]}`; // output
+  // ms padding
+  if (duration[0] < 10) {
+    ms = "0" + duration[0];
+  } else {
+    ms = duration[0];
+  }
+
+  // seconds padding
+  if (duration[1] < 10) {
+    seconds = "0" + duration[1];
+  } else {
+    seconds = duration[1];
+  }
+
+  // minutes padding
+  if (duration[2] < 10) {
+    minutes = "0" + duration[2];
+  } else {
+    minutes = duration[2];
+  }
+
+  timer.textContent = `${minutes} : ${seconds} : ${ms}`; // output
 };
 
 start = function () {

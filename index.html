@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STOPWATCH</title>
+    <title>Stopwatch</title>
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -20,14 +20,22 @@
 
   <body class="container-fluid">
     <section><h1>STOPWATCH</h1></section>
-    <section>
-      <button id="startBtn" class="btn">START</button>
-      <button id="stopBtn" class="btn">STOP</button>
-      <button id="resetBtn" class="btn">RESET</button>
+    <section id="timer">
+      <table>
+        <td id="minText">00</td>
+        <td>:</td>
+        <td id="secText">00</td>
+        <td>:</td>
+        <td id="msText">00</td>
+      </table>
     </section>
-    <section><h2 id="timer">00 : 00 : 00</h2></section>
+    <!-- <section><h2 id="timer">00 : 00 : 00</h2></section> -->
     <section>
-      <h2 id="log">STOPWATCH STATUS</h2>
+      <h2 id="log">STOPPED</h2>
+    </section>
+    <section class="controls">
+      <button id="resetBtn" class="btn">RESET</button>
+      <button id="startBtn" class="btn">START</button>
     </section>
   </body>
 </html>

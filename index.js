@@ -2,9 +2,11 @@ const startBtn = document.getElementById("startBtn");
 const stopBtn = document.getElementById("stopBtn");
 const resetBtn = document.getElementById("resetBtn");
 const log = document.getElementById("log");
-const timer = document.getElementById("timer");
+const minText = document.getElementById("minText");
+const secText = document.getElementById("secText");
+const msText = document.getElementById("msText");
 
-let started,
+let running,
   stopwatch,
   ms,
   seconds,
@@ -45,37 +47,35 @@ showtimer = function () {
     minutes = duration[2];
   }
 
-  timer.textContent = `${minutes} : ${seconds} : ${ms}`; // output
+  minText.innerHTML = minutes;
+  secText.innerHTML = seconds;
+  msText.innerHTML = ms;
 };
 
-start = function () {
-  if (!started) {
-    log.textContent = "STOPWATCH IS NOW RUNNING";
-    started = true;
+startstop = () => {
+  if (!running) {
+    log.textContent = "RUNNING";
+    running = true;
     stopwatch = setInterval(showtimer, 10);
+    startBtn.textContent = "STOP";
   } else {
-    log.textContent = "STOPWATCH IS ALREADY RUNNING !!";
-  }
-};
-
-stop = function () {
-  if (started) {
     clearInterval(stopwatch);
-    started = false;
-    log.textContent = "STOPWATCH IS NOW STOPPED";
-  } else {
-    log.textContent = "STOPWATCH IS ALREADY STOPPED !!";
+    running = false;
+    log.textContent = "STOPPED";
+    startBtn.textContent = "START";
   }
 };
 
-reset = function () {
-  started = false;
-  log.textContent = "STOPWATCH STATUS";
+reset = () => {
+  running = false;
+  startBtn.textContent = "START";
+  log.textContent = "STOPPED";
   clearInterval(stopwatch);
   duration = [0, 0, 0];
-  timer.textContent = `00 : 00 : 00`;
+  minText.textContent = "00";
+  secText.textContent = "00";
+  msText.textContent = "00";
 };
 
-startBtn.addEventListener("click", start);
-stopBtn.addEventListener("click", stop);
+startBtn.addEventListener("click", startstop);
 resetBtn.addEventListener("click", reset);

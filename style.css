@@ -8,14 +8,28 @@ body {
   background-color: #1b2021;
   color: #d8ac9c;
   text-align: center;
+  font-size: 2vw;
 }
 
 section {
-  margin: 2rem auto;
-  width: 80%;
+  margin: 2vh auto;
+  width: 80vw;
   border: 1px solid #5f939a;
   border-radius: 10px;
-  padding: 1rem;
+}
+
+table {
+  margin: auto;
+}
+
+#minText,
+#secText,
+#msText {
+  width: 20vw;
+}
+
+#timer {
+  font-size: 4em;
 }
 
 .btn,
@@ -23,8 +37,26 @@ section {
   background-color: #d8ac9c;
   color: #1b2021;
   border-color: #5f939a;
+  font-size: 1.5em;
 }
 
 .btn:hover {
   background-color: #eac8af;
+}
+
+#startBtn {
+  width: 70%;
+  margin-left: 5%;
+}
+
+#resetBtn {
+  width: 20%;
+}
+
+.controls {
+  position: absolute;
+  padding: 1vh 0;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
 }

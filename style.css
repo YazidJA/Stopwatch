@@ -1,35 +1,30 @@
 @font-face {
-  font-family: digital;
+  font-family: "Digital";
   src: url(font.ttf);
 }
 
-section {
+body {
+  font-family: "Digital";
+  background-color: #1b2021;
+  color: #d8ac9c;
   text-align: center;
+}
+
+section {
   margin: 2rem auto;
-  width: 90%;
-  border: 1px solid #023d6d;
+  width: 80%;
+  border: 1px solid #5f939a;
   border-radius: 10px;
   padding: 1rem;
-  color: #023d6d;
-  font-family: digital;
 }
 
-button {
-  font: inherit;
-  background: red;
-  color: white;
-  border: 1px solid yellow;
-  padding: 1rem;
-  cursor: pointer;
+.btn,
+.btn:hover {
+  background-color: #d8ac9c;
+  color: #1b2021;
+  border-color: #5f939a;
 }
 
-button:focus {
-  outline: none;
-}
-
-button:hover,
-button:active {
-  background: yellow;
-  border-color: red;
-  color: black;
+.btn:hover {
+  background-color: #eac8af;
 }

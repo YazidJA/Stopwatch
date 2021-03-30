@@ -8,13 +8,12 @@ body {
   background-color: #1b2021;
   color: #d8ac9c;
   text-align: center;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 h1,
 h2 {
-  margin: 1vh auto;
-  font-size: 3em;
+  margin: 2vh auto;
 }
 
 section {
@@ -28,18 +27,14 @@ table {
   margin: auto;
 }
 
-.arrows {
-  font-size: 2em;
-}
-
-.timer {
-  font-size: 5em;
-}
-
 #minText,
 #secText,
 #msText {
   width: 20vw;
+}
+
+#timer {
+  font-size: 4em;
 }
 
 .btn,
@@ -47,9 +42,7 @@ table {
   background-color: #d8ac9c;
   color: #1b2021;
   border-color: #5f939a;
-  height: 10vh;
-  font-size: 3vh;
-  padding: 0 2vh;
+  font-size: 1.5em;
 }
 
 .btn:hover {
@@ -57,14 +50,18 @@ table {
 }
 
 #startBtn {
-  width: 68%;
-  margin-left: 4%;
+  width: 70%;
+  margin-left: 5%;
+}
+
+#resetBtn {
+  width: 20%;
 }
 
 .controls {
   position: absolute;
   padding: 1vh 0;
-  bottom: 1vh;
+  bottom: 5vh;
   left: 0;
   right: 0;
 }

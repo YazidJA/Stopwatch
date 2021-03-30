@@ -1,2 +1,2 @@
-# Timer
- 
+# JS-Stopwatch
+ Simple Javascript Stopwatch

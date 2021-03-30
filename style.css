@@ -13,8 +13,8 @@ body {
 
 h1,
 h2 {
-  margin: 2vh auto;
-}
+  margin: 1vh auto;
+  font-size: 6vh;}
 
 section {
   margin: 2vh auto;

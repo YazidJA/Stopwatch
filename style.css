@@ -8,7 +8,12 @@ body {
   background-color: #1b2021;
   color: #d8ac9c;
   text-align: center;
-  font-size: 2vw;
+  font-size: 3vw;
+}
+
+h1,
+h2 {
+  margin: 2vh auto;
 }
 
 section {

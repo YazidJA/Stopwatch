@@ -37,12 +37,11 @@ table {
   font-size: 4em;
 }
 
-.btn,
-.btn:hover {
+.btn {
   background-color: #d8ac9c;
   color: #1b2021;
   border-color: #5f939a;
-  font-size: 1.5em;
+  font-size: 3vh;
 }
 
 .btn:hover {

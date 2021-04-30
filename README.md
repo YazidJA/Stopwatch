@@ -1,2 +1,2 @@
-# JS-Stopwatch
- Simple Javascript Stopwatch
+# Stopwatch
+Stopwatch App made with HTML/CSS/Javascript
